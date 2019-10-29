@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "testing"
+  cluster:
+    server: "https://cloud.cs.vt.edu/k8s/clusters/c-l4mcr"
+
+users:
+- name: "u-lzf4occhtb"
+  user:
+    token: "kubeconfig-u-lzf4occhtb:5n4qqhq7ftw65628tm2qnfmh5vfnmfx2clm5pjlnzsb9qhj77gxtmj"
+
+contexts:
+- name: "testing"
+  context:
+    user: "u-lzf4occhtb"
+    cluster: "testing"
+
+current-context: "testing"
