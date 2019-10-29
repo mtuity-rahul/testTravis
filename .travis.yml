@@ -8,6 +8,7 @@ before_script:
   - sudo mv ./kubectl /usr/local/bin/kubectl
   - mkdir ${HOME}/.kube
   - cp config ${HOME}/.kube/config
+  - kubectl create deployment barcode --image=rahulavt/barcode:first -n cs5604-int-db
 # command to run tests
 script:
   - python test.py
